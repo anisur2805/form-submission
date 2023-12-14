@@ -1,0 +1,58 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+ .afs-report-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.afs-report-table th,
+.afs-report-table td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 10px;
+}
+
+.afs-report-table th {
+    background-color: #f2f2f2;
+}
+
+.afs-report-table tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+.afs-report-table tbody td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.afs-footer-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+.afs-footer-pagination .page-numbers {
+    padding: 6px;
+    border: 1px solid #56535340;
+	outline: 0;
+    border-radius: 3px;
+    min-width: 40px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none !important;
+    color: #000;
+	transition: all 0.3s ease;
+}
+.afs-footer-pagination .page-numbers.current,
+.afs-footer-pagination .page-numbers:hover {
+	background: #4caf50;
+	color: #fff;
+}

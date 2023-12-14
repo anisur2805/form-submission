@@ -1,0 +1,273 @@
+/* Basic styling for the form */
+
+.afs-form-wrapper form {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.afs-form-wrapper label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.afs-form-wrapper .submissionForm .form-row input,
+.afs-form-wrapper .submissionForm .form-row textarea {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	box-sizing: border-box;
+	background: transparent;
+	box-shadow: unset;
+}
+
+.afs-form-wrapper .submissionForm .form-row input {
+    height: 42px;
+}
+
+
+
+.afs-form-wrapper .submissionForm .form-row input:focus,
+.afs-form-wrapper .submissionForm .form-row textarea:focus {
+	outline: 0;
+	background: transparent;
+}
+
+div#itemsContainer {
+	position: relative;
+}
+
+.afs-form-wrapper textarea {
+	resize: vertical;
+}
+
+.afs-form-wrapper #itemsContainer {
+	margin-bottom: 15px;
+}
+
+.afs-form-wrapper #itemsContainer input {
+	margin-bottom: 5px;
+	padding-right: 100px;
+}
+
+.afs-form-wrapper #addItem {
+	background-color: #4caf50;
+	color: white;
+	border: none;
+	padding: 8px 15px;
+	border-radius: 5px;
+	cursor: pointer;
+	position: absolute;
+	right: 2px;
+	top: 3px;
+}
+
+.afs-form-wrapper #addItem:hover {
+	background-color: #45a049;
+}
+
+.afs-form-wrapper #addItem:focus {
+	opacity: 1 !important;
+	outline: 0;
+}
+
+.afs-form-wrapper-admin-area {
+	background: #dddddd5e;
+	padding: 20px;
+}
+
+.afs-form-wrapper-admin-area form#submissionForm {
+	background: #fff;
+	padding: 20px;
+	margin: 20px auto;
+	border-radius: 5px;
+}
+
+.afs-form-wrapper-admin-area .afs-form-wrapper #addItem {
+	min-height: 40px;
+}
+
+.afs-form-wrapper-admin-area .afs-form-wrapper .submissionForm .form-row input {
+	height: 45px;
+}
+
+.afs-form-wrapper button[type="submit"],
+.afs-form-wrapper input[type="submit"] {
+	background-color: #4caf50;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	margin: 0 auto;
+    display: block;
+	min-width: 140px;
+}
+.afs-form-wrapper-admin-area .afs-form-wrapper input[type="submit"] {
+	padding: 15px 20px;
+}
+.afs-form-wrapper button[type="submit"]:focus,
+.afs-form-wrapper input[type="submit"]:focus {
+	outline: none;
+}
+
+.afs-form-wrapper button[type="submit"]:hover,
+.afs-form-wrapper input[type="submit"]:hover {
+	background-color: #007a9f;
+	color: white;
+}
+
+.afs-form-wrapper .form-row {
+	display: flex;
+	gap: 20px;
+}
+
+.widget-area .widget_afs_form_widget {
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	background: #f8f8f8;
+}
+
+.widget-area .widget_afs_form_widget .afs-form-wrapper .form-row {
+	flex-direction: column;
+}
+
+.afs-form-wrapper .form-row .form-col {
+	flex: 1;
+}
+
+p.afs-error {
+	color: #f00;
+	margin-bottom: 15px;
+}
+
+/* Additional styles for validation */
+
+/* Styling for form validation error messages */
+.afs-form-wrapper #errorMsg {
+	color: #ff4a4a;
+	font-size: 14px;
+	margin-top: -10px;
+	margin-bottom: 15px;
+}
+
+/* Styling for success message after submission */
+.afs-form-wrapper #successMsg {
+	color: #4caf50;
+	font-size: 16px;
+	margin-bottom: 15px;
+}
+
+div#resultContainer p {
+	padding: 10px;
+	text-align: center;
+	max-width: 500px;
+	margin: 20px auto;
+	background: #ddd;
+	border-radius: 4px;
+}
+
+div#resultContainer p.errorMsg {
+	background: #ff4a4a;
+	color: #fff;
+}
+
+div#resultContainer p.successMsg {
+	background: green;
+	color: #fff;
+}
+
+/* 
+===============
+Loader CSS 
+===============
+*/
+form.form-loader {
+	opacity: 0.5;
+	pointer-events: none;
+}
+
+form.form-loader:before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -7px;
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	border: 2px solid #4caf50;
+	border-left-color: transparent;
+	border-radius: 50%;
+	vertical-align: middle;
+	visibility: visible;
+	opacity: 1;
+	transition:
+		opacity 0.2s ease,
+		visibility 0.2s ease;
+	-webkit-animation: wd-rotate 450ms infinite linear;
+	animation: wd-rotate 450ms infinite linear;
+	box-sizing: border-box;
+}
+
+form#submissionForm {
+	position: relative;
+}
+
+@-webkit-keyframes wd-rotate {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+@keyframes wd-rotate {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+/* ==================== */
+
+.itemsContainer_inner span.item {
+	border: 1px solid #33333336;
+	margin-right: 4px;
+	padding: 4px 8px 4px 8px;
+	font-size: 14px;
+	border-radius: 3px;
+	margin-top: 8px;
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+}
+.itemsContainer_inner .item-remove {
+	border-radius: 50%;
+	border: 1px solid #f00;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	text-align: center;
+	line-height: 1;
+	cursor: pointer;
+	position: absolute;
+	right: 0;
+	top: -7px;
+	background: #f00;
+	color: #fff;
+	padding: 2px 0;
+	font-weight: 700;
+	opacity: 0;
+	box-sizing: border-box;
+	transition: all 0.3s ease;
+}
+
+.itemsContainer_inner span.item:hover span {
+	opacity: 1;
+}

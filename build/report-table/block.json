@@ -1,0 +1,43 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "afs-gutenberg-block/report-table",
+  "version": "0.1.0",
+  "title": "Report Table",
+  "category": "widgets",
+  "icon": "smiley",
+  "description": "A Gutenberg Report Table.",
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "selector": ".report-title",
+      "default": "Report Table"
+    },
+    "rowsPerPage": {
+      "type": "number",
+      "default": 10
+    },
+    "current_page": {
+      "type": "number",
+      "default": 1
+    },
+    "showPagination": {
+      "type": "boolean",
+      "default": true
+    },
+    "content": {
+      "type": "array",
+      "selector": ".report-content",
+      "default": "This list is only visible for logged-in and minimum of Editor roles."
+    }
+  },
+  "textdomain": "report-table",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}

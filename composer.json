@@ -1,0 +1,22 @@
+{
+	"name": "anisur2805/afs-form-submission",
+	"description": "A plugin for Form Submission",
+	"type": "wordpress-plugin",
+	"license": "GPLv2",
+	"authors": [
+		{
+			"name": "Anisur Rahman",
+			"email": "anisur2805@gmail.com"
+		}
+	],
+	"minimum-stability": "dev",
+	"require": {},
+	"autoload": {
+		"psr-4": {
+			"AFS\\Form_Submission\\": "includes/"
+		},
+		"files": [
+			"includes/functions.php"
+		]
+	}
+}
